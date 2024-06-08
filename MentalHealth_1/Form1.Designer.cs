@@ -31,8 +31,8 @@
             button_signIn = new Button();
             button_signUp = new Button();
             label_welcome = new Label();
-            label1 = new Label();
-            label2 = new Label();
+            label_username = new Label();
+            label_password = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             SuspendLayout();
@@ -64,23 +64,23 @@
             label_welcome.Text = "Welcome friend. Congratulations on taking a step towards managing your mental health(: Please sign-in below.";
             label_welcome.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // label_username
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(237, 214);
-            label1.Name = "label1";
-            label1.Size = new Size(78, 32);
-            label1.TabIndex = 3;
-            label1.Text = "label1";
+            label_username.AutoSize = true;
+            label_username.Location = new Point(237, 214);
+            label_username.Name = "label_username";
+            label_username.Size = new Size(137, 32);
+            label_username.TabIndex = 3;
+            label_username.Text = "Username>";
             // 
-            // label2
+            // label_password
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(237, 309);
-            label2.Name = "label2";
-            label2.Size = new Size(78, 32);
-            label2.TabIndex = 4;
-            label2.Text = "label2";
+            label_password.AutoSize = true;
+            label_password.Location = new Point(237, 309);
+            label_password.Name = "label_password";
+            label_password.Size = new Size(127, 32);
+            label_password.TabIndex = 4;
+            label_password.Text = "Password>";
             // 
             // textBox1
             // 
@@ -103,8 +103,8 @@
             ClientSize = new Size(1294, 831);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(label_password);
+            Controls.Add(label_username);
             Controls.Add(label_welcome);
             Controls.Add(button_signUp);
             Controls.Add(button_signIn);
@@ -119,8 +119,8 @@
         private Button button_signIn;
         private Button button_signUp;
         private Label label_welcome;
-        private Label label1;
-        private Label label2;
+        private Label label_username;
+        private Label label_password;
         private TextBox textBox1;
         private TextBox textBox2;
     }
