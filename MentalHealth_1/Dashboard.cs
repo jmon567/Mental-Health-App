@@ -16,5 +16,11 @@ namespace MentalHealth_1
         {
             InitializeComponent();
         }
+
+        private void pictureBox_meditation_Click(object sender, EventArgs e)
+        {
+            Meditation meditation = new Meditation();
+            meditation.ShowDialog();
+        }
     }
 }

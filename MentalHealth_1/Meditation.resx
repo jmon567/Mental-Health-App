@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Welcome to your mediation corner. Meditation has been proven to clear brain fog, help ground you to the present moment, and improve you mental health overall. Below you can find some poses and sounds you may wish to incorporate into your meditative practice. However, mediation can look different for everyone so just make sure to relax and breath. Enjoy(:</value>
+  </data>
 </root>

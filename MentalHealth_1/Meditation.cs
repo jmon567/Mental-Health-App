@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace MentalHealth_1
 {
-    public partial class Form1 : Form
+    public partial class Meditation : Form
     {
-        public Form1()
+        public Meditation()
         {
             InitializeComponent();
         }
+
+      
     }
 }

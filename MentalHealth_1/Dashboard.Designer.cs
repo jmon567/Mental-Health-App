@@ -57,6 +57,7 @@
             pictureBox_meditation.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_meditation.TabIndex = 1;
             pictureBox_meditation.TabStop = false;
+            pictureBox_meditation.Click += pictureBox_meditation_Click;
             // 
             // pictureBox_mood
             // 
