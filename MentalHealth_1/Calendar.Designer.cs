@@ -1,6 +1,6 @@
 ﻿namespace MentalHealth_1
 {
-    partial class Form2
+    partial class Calendar
     {
         /// <summary>
         /// Required designer variable.
@@ -33,18 +33,19 @@
             // 
             // monthCalendar1
             // 
-            monthCalendar1.Location = new Point(301, 104);
+            monthCalendar1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            monthCalendar1.Location = new Point(421, 250);
             monthCalendar1.Name = "monthCalendar1";
             monthCalendar1.TabIndex = 0;
             // 
-            // Form2
+            // Calendar
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1140, 759);
+            ClientSize = new Size(1312, 865);
             Controls.Add(monthCalendar1);
-            Name = "Form2";
-            Text = "Form2";
+            Name = "Calendar";
+            Text = "Calendar";
             ResumeLayout(false);
         }
 

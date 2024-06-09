@@ -45,7 +45,7 @@
             button_signIn.TabIndex = 0;
             button_signIn.Text = "Sign in";
             button_signIn.UseVisualStyleBackColor = true;
-       
+            button_signIn.Click += button_signIn_Click;
             // 
             // button_signUp
             // 

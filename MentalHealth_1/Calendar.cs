@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MentalHealth_1
 {
-    public partial class Form2 : Form
+    public partial class Calendar : Form
     {
-        public Form2()
+        public Calendar()
         {
             InitializeComponent();
         }
