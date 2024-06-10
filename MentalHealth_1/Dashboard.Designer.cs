@@ -32,6 +32,7 @@
             pictureBox_meditation = new PictureBox();
             pictureBox_mood = new PictureBox();
             pictureBox4 = new PictureBox();
+            dateTimePicker1 = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)pictureBox_journal).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_meditation).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_mood).BeginInit();
@@ -68,6 +69,7 @@
             pictureBox_mood.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_mood.TabIndex = 2;
             pictureBox_mood.TabStop = false;
+            pictureBox_mood.Click += pictureBox_mood_Click;
             // 
             // pictureBox4
             // 
@@ -79,11 +81,19 @@
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(437, 388);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(400, 39);
+            dateTimePicker1.TabIndex = 4;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1376, 833);
+            Controls.Add(dateTimePicker1);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox_mood);
             Controls.Add(pictureBox_meditation);
@@ -103,5 +113,6 @@
         private PictureBox pictureBox_meditation;
         private PictureBox pictureBox_mood;
         private PictureBox pictureBox4;
+        private DateTimePicker dateTimePicker1;
     }
 }

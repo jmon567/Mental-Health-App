@@ -16,5 +16,12 @@ namespace MentalHealth_1
         {
             InitializeComponent();
         }
+
+        private void button_dashboard_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Dashboard form3 = new Dashboard();
+            form3.ShowDialog();
+        }
     }
 }

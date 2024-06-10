@@ -22,5 +22,11 @@ namespace MentalHealth_1
             Meditation meditation = new Meditation();
             meditation.ShowDialog();
         }
+
+        private void pictureBox_mood_Click(object sender, EventArgs e)
+        {
+            MoodTracker moodTracker = new MoodTracker();
+            moodTracker.ShowDialog();
+        }
     }
 }
