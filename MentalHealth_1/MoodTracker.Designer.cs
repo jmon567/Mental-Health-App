@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label_instructions = new Label();
             label_Happy = new Label();
             label_Motivation = new Label();
@@ -36,19 +37,21 @@
             label_content = new Label();
             label_Anxious = new Label();
             button_dashboard = new Button();
-            numericUpDown1 = new NumericUpDown();
-            numericUpDown2 = new NumericUpDown();
-            numericUpDown3 = new NumericUpDown();
-            numericUpDown4 = new NumericUpDown();
-            numericUpDown5 = new NumericUpDown();
+            numericUpDown_Happiness = new NumericUpDown();
+            numericUpDown_motivation = new NumericUpDown();
+            numericUpDown_depression = new NumericUpDown();
+            numericUpDown_anxiety = new NumericUpDown();
+            numericUpDown_peace = new NumericUpDown();
             button_save = new Button();
             pictureBox_mood = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown5).BeginInit();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_Happiness).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_motivation).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_depression).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_anxiety).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_peace).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_mood).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // label_instructions
@@ -58,7 +61,7 @@
             label_instructions.Name = "label_instructions";
             label_instructions.Size = new Size(1085, 93);
             label_instructions.TabIndex = 0;
-            label_instructions.Text = "Rate the intensity of each feeling. (It's best to do this daily as a mindfullnes excersice). 5 being very intense. 1 being least intense.";
+            label_instructions.Text = "Rate the intensity of each feeling. (It's best to do this daily as a mindfullnes excersice). 5 being very intense. 0 being least intense.";
             // 
             // label_Happy
             // 
@@ -123,40 +126,47 @@
             button_dashboard.UseVisualStyleBackColor = true;
             button_dashboard.Click += button_dashboard_Click;
             // 
-            // numericUpDown1
+            // numericUpDown_Happiness
             // 
-            numericUpDown1.Location = new Point(442, 175);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(78, 39);
-            numericUpDown1.TabIndex = 8;
+            numericUpDown_Happiness.Location = new Point(442, 175);
+            numericUpDown_Happiness.Name = "numericUpDown_Happiness";
+            numericUpDown_Happiness.Size = new Size(78, 39);
+            numericUpDown_Happiness.TabIndex = 8;
+            numericUpDown_Happiness.Validating += numericUpDown_Happiness_Validating;
             // 
-            // numericUpDown2
+            // numericUpDown_motivation
             // 
-            numericUpDown2.Location = new Point(442, 261);
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(78, 39);
-            numericUpDown2.TabIndex = 9;
+            numericUpDown_motivation.Location = new Point(442, 261);
+            numericUpDown_motivation.Name = "numericUpDown_motivation";
+            numericUpDown_motivation.Size = new Size(78, 39);
+            numericUpDown_motivation.TabIndex = 9;
+            numericUpDown_motivation.Validating += numericUpDown_motivation_Validating;
             // 
-            // numericUpDown3
+            // numericUpDown_depression
             // 
-            numericUpDown3.Location = new Point(442, 340);
-            numericUpDown3.Name = "numericUpDown3";
-            numericUpDown3.Size = new Size(78, 39);
-            numericUpDown3.TabIndex = 10;
+            numericUpDown_depression.BackColor = SystemColors.ControlLightLight;
+            numericUpDown_depression.BorderStyle = BorderStyle.FixedSingle;
+            numericUpDown_depression.Location = new Point(442, 340);
+            numericUpDown_depression.Name = "numericUpDown_depression";
+            numericUpDown_depression.Size = new Size(78, 39);
+            numericUpDown_depression.TabIndex = 10;
+            numericUpDown_depression.Validating += numericUpDown_depression_Validating;
             // 
-            // numericUpDown4
+            // numericUpDown_anxiety
             // 
-            numericUpDown4.Location = new Point(442, 431);
-            numericUpDown4.Name = "numericUpDown4";
-            numericUpDown4.Size = new Size(78, 39);
-            numericUpDown4.TabIndex = 11;
+            numericUpDown_anxiety.Location = new Point(442, 431);
+            numericUpDown_anxiety.Name = "numericUpDown_anxiety";
+            numericUpDown_anxiety.Size = new Size(78, 39);
+            numericUpDown_anxiety.TabIndex = 11;
+            numericUpDown_anxiety.Validating += numericUpDown_anxiety_Validating;
             // 
-            // numericUpDown5
+            // numericUpDown_peace
             // 
-            numericUpDown5.Location = new Point(442, 522);
-            numericUpDown5.Name = "numericUpDown5";
-            numericUpDown5.Size = new Size(78, 39);
-            numericUpDown5.TabIndex = 12;
+            numericUpDown_peace.Location = new Point(442, 522);
+            numericUpDown_peace.Name = "numericUpDown_peace";
+            numericUpDown_peace.Size = new Size(78, 39);
+            numericUpDown_peace.TabIndex = 12;
+            numericUpDown_peace.Validating += numericUpDown_peace_Validating;
             // 
             // button_save
             // 
@@ -177,6 +187,10 @@
             pictureBox_mood.TabIndex = 14;
             pictureBox_mood.TabStop = false;
             // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
+            // 
             // MoodTracker
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -184,11 +198,11 @@
             ClientSize = new Size(1243, 692);
             Controls.Add(pictureBox_mood);
             Controls.Add(button_save);
-            Controls.Add(numericUpDown5);
-            Controls.Add(numericUpDown4);
-            Controls.Add(numericUpDown3);
-            Controls.Add(numericUpDown2);
-            Controls.Add(numericUpDown1);
+            Controls.Add(numericUpDown_peace);
+            Controls.Add(numericUpDown_anxiety);
+            Controls.Add(numericUpDown_depression);
+            Controls.Add(numericUpDown_motivation);
+            Controls.Add(numericUpDown_Happiness);
             Controls.Add(button_dashboard);
             Controls.Add(label_Anxious);
             Controls.Add(label_content);
@@ -199,12 +213,13 @@
             Controls.Add(label_instructions);
             Name = "MoodTracker";
             Text = "Mood Tracker";
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_Happiness).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_motivation).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_depression).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_anxiety).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_peace).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_mood).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -219,12 +234,13 @@
         private Label label_content;
         private Label label_Anxious;
         private Button button_dashboard;
-        private NumericUpDown numericUpDown1;
-        private NumericUpDown numericUpDown2;
-        private NumericUpDown numericUpDown3;
-        private NumericUpDown numericUpDown4;
-        private NumericUpDown numericUpDown5;
+        private NumericUpDown numericUpDown_Happiness;
+        private NumericUpDown numericUpDown_motivation;
+        private NumericUpDown numericUpDown_depression;
+        private NumericUpDown numericUpDown_anxiety;
+        private NumericUpDown numericUpDown_peace;
         private Button button_save;
         private PictureBox pictureBox_mood;
+        private ErrorProvider errorProvider1;
     }
 }
