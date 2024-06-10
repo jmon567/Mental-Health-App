@@ -34,6 +34,7 @@
             button_types = new Button();
             button_audio = new Button();
             button_facts = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // richTextBox1
@@ -80,11 +81,21 @@
             button_facts.Text = "More about Meditation";
             button_facts.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            button1.Location = new Point(39, 742);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 46);
+            button1.TabIndex = 5;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Meditation
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1271, 818);
+            Controls.Add(button1);
             Controls.Add(button_facts);
             Controls.Add(button_audio);
             Controls.Add(button_types);
@@ -102,5 +113,6 @@
         private Button button_types;
         private Button button_audio;
         private Button button_facts;
+        private Button button1;
     }
 }
