@@ -15,8 +15,13 @@ namespace MentalHealth_1
         public MoodTracker()
         {
             InitializeComponent();
+            int happinessValidated = (int)numericUpDown_Happiness.Value;
+            int motivationValidated = (int)numericUpDown_motivation.Value;
+            int depressionValidated = (int)numericUpDown_depression.Value;
+            int anxietyValidated = (int)numericUpDown_anxiety.Value;
+            int peaceValidated = (int)numericUpDown_peace.Value;
         }
-
+        
 
         private void button_dashboard_Click(object sender, EventArgs e)
         {
@@ -24,7 +29,7 @@ namespace MentalHealth_1
             Dashboard form3 = new Dashboard();
             form3.ShowDialog();
         }
-
+        //Error checing of numericUpDowns//
         private void numericUpDown_Happiness_Validating(object sender, CancelEventArgs e)
         {
             int happiness = (int)numericUpDown_Happiness.Value;
@@ -103,6 +108,8 @@ namespace MentalHealth_1
                 errorProvider1.SetError(numericUpDown_peace, "");
                 int peaceValidated = (int)numericUpDown_peace.Value;
             }
+            //end of checking numeric upDowns//
         }
+
     }
 }

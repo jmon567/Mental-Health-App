@@ -22,7 +22,14 @@ namespace MentalHealth_1
             this.Close();
             Dashboard form3 = new Dashboard();
             form3.ShowDialog();
-            
+
+        }
+
+        private void button_audio_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MeditationAudio meditationAudio = new MeditationAudio();
+            meditationAudio.ShowDialog();
         }
     }
 }

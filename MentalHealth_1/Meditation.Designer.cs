@@ -71,6 +71,7 @@
             button_audio.TabIndex = 3;
             button_audio.Text = "Meditation Audio";
             button_audio.UseVisualStyleBackColor = true;
+            button_audio.Click += button_audio_Click;
             // 
             // button_facts
             // 
