@@ -50,7 +50,7 @@ namespace MentalHealth_1
 
         private void pictureBox_174_Click(object sender, EventArgs e)
         {
-            bool Hz174 = true;
+           /* bool Hz174 = true;
             while (Hz174)
             {
                 try
@@ -63,7 +63,7 @@ namespace MentalHealth_1
                 catch
                 {
                     errorProvider1.SetError(pictureBox_174, "Audio Not Found");
-                    //Console.WriteLine("Audio Not Found");
+                    //Console.WriteLine("Audio Not Found");*/
                 }
                 
             }
