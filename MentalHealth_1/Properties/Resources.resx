@@ -118,43 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="habit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\habit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Journal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Journal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="meditation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\meditation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Journal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Journal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mood" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="174Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\174Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="285Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\285Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="369HZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\369HZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="963Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\963Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="417Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\417Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="528Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\528Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="369HZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\369HZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="639Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\639Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="174Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\174Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="741Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\741Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="habit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\habit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="meditationpic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\meditationpic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="852Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\852Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="963Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\963Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="285Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\285Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="528Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\528Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="741Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\741Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="639Hz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\639Hz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Meditation-Postures" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Meditation-Postures.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

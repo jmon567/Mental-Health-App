@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Security.Cryptography;
 
 namespace MentalHealth_1
 {
@@ -25,8 +26,8 @@ namespace MentalHealth_1
             bool Hz741 = false;
             bool Hz852 = false;
             bool Hz963 = false;
-          
-            
+
+
         }
 
         private void button_back_Click(object sender, EventArgs e)
@@ -50,26 +51,31 @@ namespace MentalHealth_1
 
         private void pictureBox_174_Click(object sender, EventArgs e)
         {
-           /* bool Hz174 = true;
-            while (Hz174)
+            try
             {
-                try
+                SoundPlayer Audio174 = new SoundPlayer();
+                // Audio174.SoundLocation = @"C:\\Mac\Home\Desktop\MS539Code_VS\MentalHealthApp\MentalHealth_1\MentalHealth_1\AudioWAV\174Hz.wav";
+                Audio174.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "AudioWAV\\174Hz.wav");
+                if (File.Exists(Audio174.SoundLocation))
                 {
-                    SoundPlayer Audio174 = new SoundPlayer();
-                    Audio174.SoundLocation = @"C:iClould Drive\Desktop\**MS539Code_VS\MentalHealthApp\MentalHealth_1\MentalHealth_1\bin\Debug\net8.0-windows\174Hz.m4a";
-                    Audio174.Play();
+                  
+                    MessageBox.Show("Test");
+                }
+                Audio174.Load();
+                Audio174.Play();
 
-                }
-                catch
-                {
-                    errorProvider1.SetError(pictureBox_174, "Audio Not Found");
-                    //Console.WriteLine("Audio Not Found");*/
-                }
-                
             }
-
-
-
+            catch (Exception ex)
+            {
+                errorProvider1.SetError(pictureBox_174, "Audio Not Found");
+            }
         }
+
+       
     }
+
+
+
+        
+    
 }

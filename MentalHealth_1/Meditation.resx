@@ -118,6 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Welcome to your mediation corner. Meditation has been proven to clear brain fog, help ground you to the present moment, and improve you mental health overall. Below you can find some poses and sounds you may wish to incorporate into your meditative practice. However, mediation can look different for everyone so just make sure to relax and breath. Enjoy(:</value>
+    <value>Welcome to your mediation corner. What is Meditation? - Meditation is about Focusing your atention on your breath, a mantra, or a physical sensation. Meditation helps you become more aware of the present moment and less caught up in worries about the future or regrets about the past. You can read more about the benefits of meditation by clicking on the "More about Meditation" button.</value>
+  </data>
+  <data name="richTextBox_Facts.Text" xml:space="preserve">
+    <value>There is much scietific evidence for the benefits of meditation. 
+(1) Reduced stress and anxiety. 
+(2) Improved mood 
+(3) Improved focus 
+(4) Increase in mindfulness(self-awareness). 
+(5) Improved sleep quality.
+
+Here are some tips for getting started with mediation:
+(1) Find a quiet place free from distractions
+(2) Start with short sessions (5-10min) and increase as you see fit.
+(3) Focus on your breath
+(4)Meditation Audio Frequencies can help.(They can be found in the Mediation Auido section
+
+
+
+. </value>
   </data>
 </root>

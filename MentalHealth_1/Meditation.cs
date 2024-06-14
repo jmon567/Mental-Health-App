@@ -31,5 +31,19 @@ namespace MentalHealth_1
             MeditationAudio meditationAudio = new MeditationAudio();
             meditationAudio.ShowDialog();
         }
+
+        private void button_poses_Click(object sender, EventArgs e)
+        {
+            pictureBox_Poses.Visible = true;
+            richTextBox_Facts.Visible = false;
+            pictureBox_Front.Visible = false ;
+        }
+
+        private void button_facts_Click(object sender, EventArgs e)
+        {
+            richTextBox_Facts.Visible = true;
+            pictureBox_Poses.Visible = false ;
+            pictureBox_Front.Visible = false;
+        }
     }
 }
