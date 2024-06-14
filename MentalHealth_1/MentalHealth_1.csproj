@@ -9,11 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <None Remove="AudioWAV\174Hz.wav" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="AudioWAV\174Hz.wav">
+=======
+    <None Remove="frequencies\174Hz.m4a" />
+    <None Remove="frequencies\BAD HABITS.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="frequencies\174Hz.m4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="frequencies\BAD HABITS.wav">
+>>>>>>> fb99b9f945e4587a0eb67031b7d606d6b679e716
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
