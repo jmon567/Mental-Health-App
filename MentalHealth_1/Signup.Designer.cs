@@ -68,16 +68,16 @@
             // label_username
             // 
             label_username.AutoSize = true;
-            label_username.Location = new Point(237, 214);
+            label_username.Location = new Point(271, 214);
             label_username.Name = "label_username";
-            label_username.Size = new Size(137, 32);
+            label_username.Size = new Size(88, 32);
             label_username.TabIndex = 3;
-            label_username.Text = "Username>";
+            label_username.Text = "email>";
             // 
             // label_password
             // 
             label_password.AutoSize = true;
-            label_password.Location = new Point(237, 309);
+            label_password.Location = new Point(271, 309);
             label_password.Name = "label_password";
             label_password.Size = new Size(127, 32);
             label_password.TabIndex = 4;
