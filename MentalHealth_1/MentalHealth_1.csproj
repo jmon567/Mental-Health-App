@@ -9,6 +9,48 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AudioWAV\174Hz.wav" />
+    <None Remove="AudioWAV\285Hz.wav" />
+    <None Remove="AudioWAV\396Hz.wav" />
+    <None Remove="AudioWAV\417Hz.wav" />
+    <None Remove="AudioWAV\528Hz.wav" />
+    <None Remove="AudioWAV\639Hz.wav" />
+    <None Remove="AudioWAV\741Hz.wav" />
+    <None Remove="AudioWAV\852Hz.wav" />
+    <None Remove="AudioWAV\963 HZ.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AudioWAV\174Hz.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AudioWAV\285Hz.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AudioWAV\396Hz.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AudioWAV\417Hz.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AudioWAV\528Hz.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AudioWAV\639Hz.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AudioWAV\741Hz.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AudioWAV\852Hz.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AudioWAV\963 HZ.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

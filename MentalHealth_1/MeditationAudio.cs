@@ -8,13 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
-<<<<<<< HEAD
-using System.Security.Cryptography;
-=======
 using Microsoft.VisualBasic.ApplicationServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Diagnostics;
->>>>>>> fb99b9f945e4587a0eb67031b7d606d6b679e716
+using System.Security.Cryptography;
 
 namespace MentalHealth_1
 {
@@ -57,54 +54,35 @@ namespace MentalHealth_1
 
         private void pictureBox_174_Click(object sender, EventArgs e)
         {
-            try
-            {
-<<<<<<< HEAD
-                SoundPlayer Audio174 = new SoundPlayer();
-                // Audio174.SoundLocation = @"C:\\Mac\Home\Desktop\MS539Code_VS\MentalHealthApp\MentalHealth_1\MentalHealth_1\AudioWAV\174Hz.wav";
-                Audio174.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "AudioWAV\\174Hz.wav");
-                if (File.Exists(Audio174.SoundLocation))
+           
+            
+                try
                 {
-                  
-                    MessageBox.Show("Test");
-                }
-                Audio174.Load();
-                Audio174.Play();
-
-            }
-            catch (Exception ex)
-            {
-                errorProvider1.SetError(pictureBox_174, "Audio Not Found");
-            }
-=======
-
                     SoundPlayer Audio174 = new SoundPlayer();
-               Audio174.SoundLocation = @"C:\Users\jackmiller\Desktop\Code\MentalHealth_1\bin\Debug\net8.0 - windows\frequencies\BAD HABITS.wav";
-               // Audio174.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "frequencies/174Hz.m4a");
-               Audio174.Load();
-                Audio174.PlayLooping();
-                   // Audio174.Play();
+                    //Audio174.SoundLocation = @"C:iClould Drive\Desktop\**MS539Code_VS\MentalHealthApp\MentalHealth_1\MentalHealth_1\bin\Debug\net8.0-windows\174Hz.m4a";
+                    Audio174.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "AudioWAV\\174Hz.wav");
+                    
+                    Audio174.Load();
+                    Audio174.PlayLooping();
 
                 }
-                catch (Exception ex) {                
-                    
+                catch (Exception ex)
+                {
                     errorProvider1.SetError(pictureBox_174, "Audio Not Found");
-
                     //Console.WriteLine("Audio Not Found");
                 }
-                
+
+
+
+
             
-
-
-
->>>>>>> fb99b9f945e4587a0eb67031b7d606d6b679e716
         }
 
-       
+
     }
+}
 
 
 
         
     
-}
