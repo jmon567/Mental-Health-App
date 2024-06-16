@@ -123,7 +123,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1375, 884);
+            ClientSize = new Size(1495, 992);
             Controls.Add(richTextBox_Facts);
             Controls.Add(pictureBox_Poses);
             Controls.Add(pictureBox_Front);

@@ -48,6 +48,7 @@
             pictureBox_journal.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_journal.TabIndex = 0;
             pictureBox_journal.TabStop = false;
+            pictureBox_journal.Click += pictureBox_journal_Click;
             // 
             // pictureBox_meditation
             // 
@@ -92,7 +93,7 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1376, 833);
+            ClientSize = new Size(1363, 833);
             Controls.Add(dateTimePicker1);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox_mood);

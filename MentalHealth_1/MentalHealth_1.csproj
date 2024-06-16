@@ -18,6 +18,7 @@
     <None Remove="AudioWAV\741Hz.wav" />
     <None Remove="AudioWAV\852Hz.wav" />
     <None Remove="AudioWAV\963 HZ.wav" />
+    <None Remove="Journal Data\journal.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +47,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="AudioWAV\963 HZ.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Journal Data\journal.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

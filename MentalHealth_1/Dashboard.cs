@@ -28,5 +28,11 @@ namespace MentalHealth_1
             MoodTracker moodTracker = new MoodTracker();
             moodTracker.ShowDialog();
         }
+
+        private void pictureBox_journal_Click(object sender, EventArgs e)
+        {
+            Form journal = new Form_Journal();
+            journal.ShowDialog();
+        }
     }
 }
