@@ -30,6 +30,7 @@
         {
             richTextBox_journal = new RichTextBox();
             button_load = new Button();
+            button_save = new Button();
             SuspendLayout();
             // 
             // richTextBox_journal
@@ -42,7 +43,7 @@
             // 
             // button_load
             // 
-            button_load.Location = new Point(477, 409);
+            button_load.Location = new Point(229, 406);
             button_load.Name = "button_load";
             button_load.Size = new Size(150, 46);
             button_load.TabIndex = 1;
@@ -50,11 +51,22 @@
             button_load.UseVisualStyleBackColor = true;
             button_load.Click += button_load_Click;
             // 
+            // button_save
+            // 
+            button_save.Location = new Point(574, 406);
+            button_save.Name = "button_save";
+            button_save.Size = new Size(150, 46);
+            button_save.TabIndex = 2;
+            button_save.Text = "Save";
+            button_save.UseVisualStyleBackColor = true;
+            button_save.Click += button_save_Click;
+            // 
             // Form_Journal
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1126, 623);
+            Controls.Add(button_save);
             Controls.Add(button_load);
             Controls.Add(richTextBox_journal);
             Name = "Form_Journal";
@@ -66,5 +78,6 @@
 
         private RichTextBox richTextBox_journal;
         private Button button_load;
+        private Button button_save;
     }
 }

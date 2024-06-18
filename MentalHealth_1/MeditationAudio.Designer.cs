@@ -102,6 +102,7 @@
             pictureBox_285.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_285.TabIndex = 2;
             pictureBox_285.TabStop = false;
+            pictureBox_285.Click += pictureBox_285_Click;
             // 
             // pictureBox_396
             // 
@@ -112,6 +113,7 @@
             pictureBox_396.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_396.TabIndex = 3;
             pictureBox_396.TabStop = false;
+            pictureBox_396.Click += pictureBox_396_Click;
             // 
             // pictureBox_528
             // 
@@ -122,6 +124,7 @@
             pictureBox_528.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_528.TabIndex = 4;
             pictureBox_528.TabStop = false;
+            pictureBox_528.Click += pictureBox_528_Click;
             // 
             // pictureBox_852
             // 
@@ -132,6 +135,7 @@
             pictureBox_852.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_852.TabIndex = 5;
             pictureBox_852.TabStop = false;
+            pictureBox_852.Click += pictureBox_852_Click;
             // 
             // pictureBox_963
             // 
@@ -142,6 +146,7 @@
             pictureBox_963.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_963.TabIndex = 6;
             pictureBox_963.TabStop = false;
+            pictureBox_963.Click += pictureBox_963_Click;
             // 
             // pictureBox_639
             // 
@@ -152,6 +157,7 @@
             pictureBox_639.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_639.TabIndex = 7;
             pictureBox_639.TabStop = false;
+            pictureBox_639.Click += pictureBox_639_Click;
             // 
             // pictureBox_417
             // 
@@ -162,6 +168,7 @@
             pictureBox_417.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_417.TabIndex = 8;
             pictureBox_417.TabStop = false;
+            pictureBox_417.Click += pictureBox_417_Click;
             // 
             // pictureBox_741
             // 
@@ -172,6 +179,7 @@
             pictureBox_741.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_741.TabIndex = 9;
             pictureBox_741.TabStop = false;
+            pictureBox_741.Click += pictureBox_741_Click;
             // 
             // button_back
             // 
