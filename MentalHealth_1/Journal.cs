@@ -16,9 +16,9 @@ namespace MentalHealth_1
 
     public partial class Form_Journal : Form
     {
-        public List<journalentry> journalentries = new List<journalentry>();
-        public string currentDirectory = Directory.GetCurrentDirectory();
-        public string jsonpath = Directory.GetCurrentDirectory() + "/Journal Data/journal.json";
+       // public List<journalentry> journalentries = new List<journalentry>();
+        //public string currentDirectory = Directory.GetCurrentDirectory();
+        //public string jsonpath = Directory.GetCurrentDirectory() + "/Journal Data/journal.json";
         public Form_Journal()
         {
             InitializeComponent();
@@ -28,23 +28,23 @@ namespace MentalHealth_1
         {
 
            
-            //richTextBox_journal.Text = json;
+            /*richTextBox_journal.Text = json;
             this.journalentries = JsonSerializer.Deserialize<List<journalentry>>(File.ReadAllText (this.jsonpath));
             journalentry currententry = journalentries[0];
 
-            richTextBox_journal.Text = currententry.Content;
+            richTextBox_journal.Text = currententry.Content;*/
 
         }
 
         private void button_save_Click(object sender, EventArgs e)
         {
-            journalentry pending = new journalentry("June 18th", "John", richTextBox_journal.Text);
+           /* journalentry pending = new journalentry("June 18th", "John", richTextBox_journal.Text);
             
             this.journalentries.Add(pending);
             //this.journalentries.ToString();
             string json = JsonSerializer.Serialize<List<journalentry>>(journalentries);
             //richTextBox_journal.Text = json;
-            File.WriteAllText(this.jsonpath, json);
+            File.WriteAllText(this.jsonpath, json);*/
         }
         //Push element to end of array.(add to end of list) ---Convert to a json string through the json se
         //serializer. --write to textbox

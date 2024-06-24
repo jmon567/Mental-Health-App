@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,13 +16,9 @@ namespace MentalHealth_1
         public MoodTracker()
         {
             InitializeComponent();
-            int happinessValidated = (int)numericUpDown_Happiness.Value;
-            int motivationValidated = (int)numericUpDown_motivation.Value;
-            int depressionValidated = (int)numericUpDown_depression.Value;
-            int anxietyValidated = (int)numericUpDown_anxiety.Value;
-            int peaceValidated = (int)numericUpDown_peace.Value;
+           
         }
-        
+
 
         private void button_dashboard_Click(object sender, EventArgs e)
         {
@@ -111,5 +108,40 @@ namespace MentalHealth_1
             //end of checking numeric upDowns//
         }
 
+        private void button_save_Click(object sender, EventArgs e)
+        {
+            int happinessValidated = (int)numericUpDown_Happiness.Value;
+            int motivationValidated = (int)numericUpDown_motivation.Value;
+            int depressionValidated = (int)numericUpDown_depression.Value;
+            int anxietyValidated = (int)numericUpDown_anxiety.Value;
+            int peaceValidated = (int)numericUpDown_peace.Value;
+
+            //-----Connect to the SQL database------//
+            //string connectionString = "" 
+
+            //------Prepare the SQL statement------//
+            //string sql = "INSERT INTO mood (Happiness, Motivation, Depression, Anxiety, Contentment) VALUES (@Happiness, @Motivation, @Depression, @Anxiety, @Contentment)";
+            // SqlCommand command = new SqlCommand(sql, connection);
+
+            //------Add parameters to prevent SQL injection-----//
+           /* command.Parameters.AddWithValue("@Happiness", happiness);
+            command.Parameters.AddWithValue("@Motivation", motivation);
+            command.Parameters.AddWithValue("@Depression", depression);
+            command.Parameters.AddWithValue("@Anxiety", anxiety);
+            command.Parameters.AddWithValue("@Contentment", contentment);
+
+            try
+            {
+                connection.Open();
+                command.ExecuteNonQuery();
+                MessageBox.Show("Mood data saved successfully!", "Success");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving data:");
+            } 
+           */
+
+        }
     }
 }
