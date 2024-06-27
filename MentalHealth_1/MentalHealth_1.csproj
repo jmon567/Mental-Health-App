@@ -18,6 +18,10 @@
     <None Remove="AudioWAV\741Hz.wav" />
     <None Remove="AudioWAV\852Hz.wav" />
     <None Remove="AudioWAV\963Hz.wav" />
+    <None Remove="Database1.mdf" />
+    <None Remove="Database1_log.ldf" />
+    <None Remove="dbo.Table.sql" />
+    <None Remove="dbo.Table_1.sql" />
     <None Remove="Journal Data\journal.json" />
   </ItemGroup>
 
@@ -52,6 +56,10 @@
     <Content Include="Journal Data\journal.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
   </ItemGroup>
 
   <ItemGroup>

@@ -10,15 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json;
 using System.Windows.Forms.VisualStyles;
+using System.Data.SQLite;
 
 namespace MentalHealth_1
 {
 
     public partial class Form_Journal : Form
     {
-       // public List<journalentry> journalentries = new List<journalentry>();
-        //public string currentDirectory = Directory.GetCurrentDirectory();
-        //public string jsonpath = Directory.GetCurrentDirectory() + "/Journal Data/journal.json";
+
         public Form_Journal()
         {
             InitializeComponent();
@@ -27,39 +26,80 @@ namespace MentalHealth_1
         private void button_load_Click(object sender, EventArgs e)
         {
 
-           
-            /*richTextBox_journal.Text = json;
-            this.journalentries = JsonSerializer.Deserialize<List<journalentry>>(File.ReadAllText (this.jsonpath));
-            journalentry currententry = journalentries[0];
+            // journalentry test = new journalentry("0","jack","Hiya", 1, 3,3,3,3,3);
+            //test.mood.
 
-            richTextBox_journal.Text = currententry.Content;*/
+            using (var connection = new SQLiteConnection("Data Source=MentalHealthDatabase.db"))
+            {
+                connection.Open();
+                var command = connection.CreateCommand();
+                command.CommandText =
+                @"
+                    SELECT User
+                    FROM [Journal Entry]
+                    WHERE ID = $id
+                ";
+                command.Parameters.AddWithValue("$id", 1);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var name = reader.GetString(0);
+
+                        Console.WriteLine($"Hello, {name}!");
+                    }
+                }
+            }
 
         }
 
         private void button_save_Click(object sender, EventArgs e)
         {
-           /* journalentry pending = new journalentry("June 18th", "John", richTextBox_journal.Text);
-            
-            this.journalentries.Add(pending);
-            //this.journalentries.ToString();
-            string json = JsonSerializer.Serialize<List<journalentry>>(journalentries);
-            //richTextBox_journal.Text = json;
-            File.WriteAllText(this.jsonpath, json);*/
+
         }
-        //Push element to end of array.(add to end of list) ---Convert to a json string through the json se
-        //serializer. --write to textbox
+
     }
     public class journalentry
     {
-        public string DateTime { get; set; }
+        public string JournalTime { get; set; }
         public string User { get; set; }
-        public string Content { get; set; }
-        public journalentry(string datetime, string user, string content) 
+        public string JournalEntry { get; set; }
+        public int ID { get; set; }
+
+        public Mood mood { get; set; }
+        public journalentry(string journaltime, string user, string journalentry, int ID,
+            int contentment, int anxiety, int motivation, int depressed, int happy)
         {
-            this.DateTime = datetime;
-            this.User = user;   
-            this.Content = content;
-        
+            this.ID = ID;
+            this.JournalEntry = journalentry;
+            this.JournalTime = journaltime;
+            this.User = user;
+            this.mood = new Mood(contentment, anxiety, motivation, depressed, happy);
+
         }
     }
+
+    public class Mood
+    {
+        public int Contentment { get; set; }
+        public int Anxiety { get; set; }
+        public int Motivation { get; set; }
+        public int Depressed { get; set; }
+        public int Happy { get; set; }
+
+        public Mood(int contentment, int anxiety, int motivation, int depressed, int happy)
+        {
+            this.Contentment = contentment;
+            this.Anxiety = anxiety;
+            this.Motivation = motivation;
+            this.Depressed = depressed;
+            this.Happy = happy;
+        }
+
+
+
+
+    } 
+
 }
