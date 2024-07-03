@@ -8,15 +8,19 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
+using System.Data.Entity.Migrations.Model;
 
 namespace MentalHealth_1
 {
     public partial class MoodTracker : Form
     {
+        public journalentry currententry;
         public MoodTracker()
         {
             InitializeComponent();
-           
+
+
         }
 
 
@@ -116,31 +120,41 @@ namespace MentalHealth_1
             int anxietyValidated = (int)numericUpDown_anxiety.Value;
             int peaceValidated = (int)numericUpDown_peace.Value;
 
-            //-----Connect to the SQL database------//
-            //string connectionString = "" 
 
-            //------Prepare the SQL statement------//
-            //string sql = "INSERT INTO mood (Happiness, Motivation, Depression, Anxiety, Contentment) VALUES (@Happiness, @Motivation, @Depression, @Anxiety, @Contentment)";
-            // SqlCommand command = new SqlCommand(sql, connection);
+            //int ID = currententry.ID;
+            //string journalentry = currententry.JournalEntry;
+            //string time = currententry.JournalTime;
+            //string user = currententry.User;
 
-            //------Add parameters to prevent SQL injection-----//
-           /* command.Parameters.AddWithValue("@Happiness", happiness);
-            command.Parameters.AddWithValue("@Motivation", motivation);
-            command.Parameters.AddWithValue("@Depression", depression);
-            command.Parameters.AddWithValue("@Anxiety", anxiety);
-            command.Parameters.AddWithValue("@Contentment", contentment);
+            
+                //-----Connect to the SQL database------//
+                //string connectionString = "" 
 
-            try
-            {
-                connection.Open();
-                command.ExecuteNonQuery();
-                MessageBox.Show("Mood data saved successfully!", "Success");
+                //------Prepare the SQL statement------//
+                //string sql = "INSERT INTO mood (Happiness, Motivation, Depression, Anxiety, Contentment) VALUES (@Happiness, @Motivation, @Depression, @Anxiety, @Contentment)";
+                // SqlCommand command = new SqlCommand(sql, connection);
+
+                //------Add parameters to prevent SQL injection-----//
+                /* command.Parameters.AddWithValue("@Happiness", happiness);
+                 command.Parameters.AddWithValue("@Motivation", motivation);
+                 command.Parameters.AddWithValue("@Depression", depression);
+                 command.Parameters.AddWithValue("@Anxiety", anxiety);
+                 command.Parameters.AddWithValue("@Contentment", contentment);
+
+                 try
+                 {
+                     connection.Open();
+                     command.ExecuteNonQuery();
+                     MessageBox.Show("Mood data saved successfully!", "Success");
+                 }
+                 catch (Exception ex)
+                 {
+                     MessageBox.Show("Error saving data:");
+                 } 
+                */
+
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error saving data:");
-            } 
-           */
+
 
         }
     }
